@@ -8,21 +8,26 @@ function Footer() {
     {title:'Social Media',Links:['Instagram','Facebook']}
   ]
   return (
-    <Container>
+    <Container id='contact'>
+      <LogoFooter>
+        <img src='./icons_assets/Logo1.svg' alt='little lemon logo'/>
+      </LogoFooter>
        {Footer_Info.map((item)=> {
-                return(
+                return( 
                 <Card key={item.title}>
                    <Title>
                     <span>{item.title}</span>
                    </Title>
                    <Links>
-                    <span>{item.Links}</span>
+                   {item.Links.map((link)=>{
+                    return(
+                    <a key={link} href={"#"}><span>{link}</span></a>
+                    )
+                   })}
                    </Links>
                 </Card>
                 )
             })}
-      <p>Copyright Little Lemon</p>
-      <p>All rights reserved</p>
     </Container>
   );
 }
@@ -31,21 +36,49 @@ export default Footer;
 const Container = styled.div`
 grid-column:1/13;
 grid-row:20/23;
+background:white ;
 background:#495E57;
+display:flex;
+flex-direction:row;
+`
+const LogoFooter =  styled.div`
+width:25%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
 `
 const Card = styled.div`
-background:red;
-width:100%;
+width:25%;
+height:100%;
 `
 
 const Title = styled.div`
-grid-column:1/13;
-grid-row:20/23;
-background:#495E57;
+height:20%;
+display:flex;
+align-items:center;
+text-align:left;
+font-family:'Markazi Text', 'serif';
+font-size:24px;
+font-weight:600;
+color:#F4CE14;
 `
 const Links = styled.div`
-grid-column:1/13;
-grid-row:20/23;
-background:#495E57;
+height:80%;
+display:flex;
+flex-direction:column;
+display:flex;
+gap:3vh;
+text-aling:left;
+font-family:'Karla', 'serif';
+font-size:18px;
+font-weight:600;
+a{
+text-decoration:none;
+color:#EDEFEE;
+&:hover{
+  text-decoration:underline;
+}
+}
 `
 

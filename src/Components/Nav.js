@@ -12,19 +12,19 @@ function Nav() {
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/about">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="/services">Menu</a>
+          <a href="#menu">Menu</a>
         </li>
         <li>
-          <a href="/contact">Reservations</a>
+          <a href="/Booking">Reservations</a>
         </li>
         <li>
-          <a href="/contact">Order Online</a>
+          <a href="/booking">Order Online</a>
         </li>
         <li>
-          <a href="/contact">Login</a>
+          <a href="/login">Login</a>
         </li>
       </ul>
     </Container>
@@ -33,10 +33,8 @@ function Nav() {
 
 export default Nav;
 const Container = styled.nav`
-width:100%;
+width:60%;
 height:10vh;
-grid-column:3/11;
-grid-row:1/2;
 display:flex;
 flex-direction:row;
 align-items:center;
@@ -58,6 +56,7 @@ li{
     color:black;
     font-size:18px;
     font-weight:bold;
+    font-family:'Karla','serif';
     letter-spacing:2px;
   }
 }

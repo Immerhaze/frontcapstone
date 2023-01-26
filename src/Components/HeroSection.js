@@ -30,7 +30,7 @@ const Container = styled.div`
  justify-content:center;
 `
 const TextWrapper = styled.div`
-width:42%;
+width:40%;
 height:100%;
 display:flex;
 flex-direction:column;
@@ -38,7 +38,7 @@ justify-content:space-around;
 
 `
 const Text = styled.div`
-width:45%;
+width:60%;
 height:100%;
 display:flex;
 flex-direction:column;
@@ -88,7 +88,6 @@ button{
 const ImageWrapper = styled.div`
 width:25%;
 height:50vh;
-background:red;
 position:relative;
 border-radius:25px;
 top:5vh;

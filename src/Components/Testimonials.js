@@ -23,7 +23,7 @@ const User =[
                     </Rating>
                     <Profile>
                         <div className='mid_section'>
-                            <img src={item.url} alt="Profile picture"/>
+                            <img src={item.url} alt="Person's face"/>
                             <span>{item.name}</span>
                         </div>
                         <Review>
@@ -47,7 +47,7 @@ grid-row:11/14;
 `
 const Top = styled.div`
 height:20%;
-font-family: 'Markazi Text', serif;
+: 'Markazi Text', serif;
 font-weight:500;
 font-size:40px;
 text-align:center;
@@ -92,7 +92,7 @@ justify-content:space-around;;
  align-items:center;
  justify-content:space-around;
  font-size:18px;
- font-family:'Karla','serif';
+ :'Karla','serif';
  font-weight:700;
 
 }
@@ -100,5 +100,5 @@ justify-content:space-around;;
 const Review = styled.div`
 font-size:16px;
 font-weight:300;
-font-family:'Karla', 'serif';
+:'Karla', 'serif';
 `

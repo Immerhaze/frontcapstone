@@ -11,7 +11,7 @@ const CardData=[
     {img:'./icons_assets/lemon dessert.jpg',alt:'Lemon Dessert',title:'Lemon Dessert',price:'5.00',description:"This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined"}
 ]
   return (
-    <Container>
+    <Container id='menu'>
         <Top>
             <SectionTitle>
                 This week's specials!
@@ -38,10 +38,10 @@ const CardData=[
                     </Description>
                     <Order>
                         <div>
-                        <span>Order a delivery</span>
+                        <a href='#'>Order a delivery</a>
                         </div>
                         <div>
-                        <MdDirectionsBike/>
+                        <MdDirectionsBike id='icondelivery'/>
                         </div>
                     </Order>
                 </Card>
@@ -133,4 +133,15 @@ display:flex;
 flex-direction:row;
 padding:2vh;
 gap:10px;
+
+a{
+    text-decoration:none;
+    color:#333333;
+    &:hover{
+        color:#F4C14E;
+    }
+}
+&:hover{
+    color:#F4C14E;
+}
 `
